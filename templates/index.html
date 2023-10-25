@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Recommendation</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <label for="anime_name">Enter Full Anime Name:</label>
+        <input type="text" id="anime_name" name="anime_name" required>
+        <button type="submit">Get Recommendation</button>
+    </form>
+
+    <div>
+        <strong>Recommendation:</strong>
+        <p>{{ recommendation|safe }}</p>
+    </div>
+</body>
+</html>
