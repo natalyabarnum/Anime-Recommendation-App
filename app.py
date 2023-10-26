@@ -43,7 +43,8 @@ def index():
                 response = openai.ChatCompletion.create(
                     model="gpt-3.5-turbo",
                     messages=[
-                        {"role": "user", "content": f"Based on the anime '{anime_name}', what are 5 other animes that someone might enjoy? Only recommend animes that don't have the same name. Please list them in bullet-point format with brief descriptions"}
+                        {"role": "user", "content": f"Based on the anime '{anime_name}', what are 5 other animes that someone might enjoy? 
+                         Only recommend animes that don't have the same name. Please list them in bullet-point format with brief descriptions"}
                     ],
                     max_tokens=350
                 )
